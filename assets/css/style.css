@@ -1,0 +1,294 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+h1 {
+  font-family: Spectral, serif;
+  font-weight: 500;
+  font-size: 7em;
+  margin-right: 5px;
+  letter-spacing: -10px;
+}
+.hidden {
+  display: none;
+}
+button:hover {
+  cursor: pointer;
+}
+button:active {
+  box-shadow: inset 1px 1px 5px black;
+}
+.flex {
+  display: flex;
+}
+.sticky {
+  position: sticky;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.bigContainer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#header {
+  top: 0;
+  padding: 20px 0 15px 0;
+  background-color: #ffc017;
+  border-bottom: 1px solid black;
+  z-index: 1;
+}
+#header .bigContainer {
+  justify-content: space-between;
+  align-items: center;
+}
+#menu {
+  align-items: center;
+}
+.menuList {
+  margin: 0 15px;
+}
+.menuList a {
+  font-size: 0.875em;
+}
+.button {
+  background-color: #191919;
+  color: white;
+  font-size: 0.875em;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  height: 38px;
+  transition: background-color 0.5s linear;
+}
+.button:hover {
+  background-color: #000000;
+}
+#header.downScroll {
+  background-color: white;
+  transition: background-color 0.5s linear;
+}
+.downScroll #navButton {
+  background-color: #1a8917;
+}
+
+#sectionHero {
+  position: relative;
+  height: 455px;
+  background-color: #ffc017;
+  border-bottom: 1px solid black;
+  overflow: hidden;
+}
+
+#heroText {
+  padding: 75px 0;
+  width: 600px;
+}
+
+#heroText h2 {
+  margin-top: 20px;
+  margin-right: 50px;
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #242424;
+}
+
+#heroButton {
+  margin-top: 50px;
+  font-size: 1.25em;
+  width: 213px;
+  height: 42px;
+}
+
+#svg-box {
+  position: absolute;
+  right: 0;
+  width: 585px;
+}
+
+#sectionHero svg {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  align-items: center;
+}
+
+.title h3 {
+  font-weight: bold;
+  font-size: 1em;
+  color: #242424;
+}
+
+#trendingBigBox {
+  margin-top: 25px;
+}
+
+#trendingBigBox h3 {
+  margin-left: 15px;
+  font-weight: 500;
+  font-size: 1.07em;
+}
+
+.postBox {
+  flex-basis: calc(100% / 3);
+  margin: 15px 0;
+}
+
+.post {
+  flex-basis: 70%;
+}
+
+.trendingTear {
+  font-size: 1.88em;
+  color: #e6e6e680;
+  font-weight: bold;
+  flex-basis: 15%;
+}
+
+.account {
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.accountPhoto {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.name {
+  font-size: 0.77em;
+}
+
+.post a {
+  color: #242424;
+  font-weight: bold;
+}
+
+.infoPost {
+  font-size: 0.81em;
+  color: #6b6b6b;
+  margin-top: 10px;
+}
+
+#trending .infoPost span::before,
+.postFooter i:first-of-type:before,
+.postFooter i:first-of-type:after {
+  content: '.';
+  position: relative;
+  bottom: 3.5px;
+  margin: 0 5px;
+  font-size: 1.7em;
+  background-color: none;
+}
+
+#giantContainer,
+#longScroll .post {
+  justify-content: space-evenly;
+}
+
+#longScroll,
+.global-info-post {
+  flex-basis: 55%;
+}
+
+.imagePost {
+  flex-basis: 35%;
+}
+
+#longScroll .account {
+  margin-bottom: 10px;
+}
+
+.globalInfoPost > a {
+  font-size: 1.25em;
+}
+
+span.subtitle {
+  margin: 10px 0;
+  display: block;
+  font-size: 0.8em;
+  font-weight: normal;
+  color: #6b6b6b;
+}
+
+.postFooter {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.postFooter button {
+  background-color: transparent;
+  border: none;
+}
+
+#longScroll .post {
+  margin-top: 50px;
+}
+
+.category {
+  background-color: #f2f2f2;
+  padding: 5px 8px;
+  border-radius: 25px;
+  height: 26px;
+  color: #6b6b6b;
+}
+
+#moreButton {
+  display: none;
+}
+
+#sideContainer {
+  flex-basis: 30%;
+}
+
+#asideFooter {
+  top: 100px;
+  margin-top: 50px;
+}
+
+#aside {
+  padding-bottom: 30px;
+  border-bottom: 2px solid #e6e6e680;
+}
+
+#aside h5 {
+  font-size: 1em;
+  font-weight: bold;
+  color: #242424;
+  margin-bottom: 20px;
+}
+
+#categoryBlock {
+  gap: 6px;
+}
+
+#aside .category {
+  margin-bottom: 10px;
+  height: 38px;
+  padding: 10px 15px;
+}
+
+#footer {
+  margin-top: 40px;
+}
+.footerLink {
+  margin: 0 15px 10px 0;
+  font-size: 0.87em;
+  color: #6b6b6b;
+}

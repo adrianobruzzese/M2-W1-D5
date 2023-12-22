@@ -203,7 +203,7 @@ button:active {
 }
 
 #longScroll,
-.global-info-post {
+.globalInfoPost {
   flex-basis: 55%;
 }
 
